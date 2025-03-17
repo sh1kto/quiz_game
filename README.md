@@ -2,6 +2,8 @@
 
 A simple command-line quiz game in Python that loads multiple-choice questions from a file and evaluates the user's answers.  
 
+![Static Badge](https://img.shields.io/badge/Prerequisites-Python-brightgreen)  
+
 ## 📌 Features  
 
 ✅ Loads questions dynamically from a `.qnf` file.  
@@ -12,13 +14,13 @@ A simple command-line quiz game in Python that loads multiple-choice questions f
 ## 🛠 Installation  
 
 ### Prerequisites  
-![Static Badge](https://img.shields.io/badge/Prerequisites-Python-brightgreen)  
+
 - Python must be installed on your system. You can download it from [python.org](https://www.python.org/).  
 
 ### Steps  
 1. **Clone the repository:**  
    ```sh
-   git clone https://github.com/yourusername/quiz-game.git
+   git clone https://github.com/sh1kto/quiz-game.git
    cd quiz-game
    ```  
 
