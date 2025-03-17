@@ -1,4 +1,4 @@
-[# 🧠 Quiz Game  
+# 🧠 Quiz Game  
 
 A simple command-line quiz game in Python that loads multiple-choice questions from a file and evaluates the user's answers.  
 
