@@ -1,14 +1,23 @@
-questions = ("Who is Saitama?: ",
-             "Who is Ken Kaneki?: ",
-             "Who can beat Saitama?: ",
-             "Which one is the best class?: ")
+# Function to load questions from file
+def load_questions(filename):
+    questions = []
+    options = []
+    answers = []
+    
+    with open(filename, "r", encoding="utf-8") as file:
+        for line in file:
+            parts = line.strip().split(";")  # Split the line by ";"
+            if len(parts) == 6:  # Ensure it has the correct format
+                questions.append(parts[0])  # Question
+                options.append(tuple(parts[1:5]))  # Options (as a tuple)
+                answers.append(parts[5])  # Correct answer
 
-options = (("A. Doctor", "B. Caped Baldy", "C. Politician", "D. Mafia"),
-            ("A. Whale", "B. Vampire", "C. Ghoul", "D. Ostrich"),
-            ("A. Blast", "B. God", "C. Garou", "D. NO ONE!"),
-            ("A. Necromancer", "B. Knight", "C. Theif", "D. Samurai"))
+    return questions, options, answers
 
-answers = ("B", "C", "D", "A")
+
+# Load questions from file
+questions, options, answers = load_questions("questions/demo.qnf")
+
 guesses = []
 score = 0
 question_num = 0
@@ -18,29 +27,32 @@ for question in questions:
     print(question)
     for option in options[question_num]:
         print(option)
-    guess = input("Enter (A, B, C, D): ").upper()
+    
+    # Input validation
+    while True:
+        guess = input("Enter (A, B, C, D): ").upper()
+        if guess in ["A", "B", "C", "D"]:
+            break
+        print("Invalid choice! Please enter A, B, C, or D.")
+    
     guesses.append(guess)
+
     if guess == answers[question_num]:
         score += 1
         print("CORRECT!")
     else:
         print("INCORRECT!")
         print(f"{answers[question_num]} is the correct answer")
+    
     question_num += 1
 
+# Display results
 print("----------------------")
 print("       RESULTS        ")
 print("----------------------")
 
-print("answers: ", end="")
-for answer in answers:
-    print(answer, end=" ")
-print()
+print("answers: ", " ".join(answers))
+print("guesses: ", " ".join(guesses))
 
-print("guesses: ", end="")
-for guess in guesses:
-    print(guess, end=" ")
-print()
-
-score = int(score/len(questions) * 100)
-print(f"Your score is: {score}%")
+score_percentage = round((score / len(questions)) * 100, 2)
+print(f"Your score is: {score_percentage}%")
