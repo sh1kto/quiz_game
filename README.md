@@ -55,6 +55,4 @@ Which planet is known as the Red Planet?;A) Earth;B) Venus;C) Mars;D;Jupiter;C
 
 ## 📜 License  
 
-This project is open-source. Feel free to modify and improve it!  
-
-](https://raw.githubusercontent.com/sh1kto/quiz_game/refs/heads/main/qz_sc1.png)
+This project is open-source. Feel free to modify and improve it!
