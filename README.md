@@ -1,4 +1,4 @@
-# 🧠 Quiz Game  
+[# 🧠 Quiz Game  
 
 A simple command-line quiz game in Python that loads multiple-choice questions from a file and evaluates the user's answers.  
 
@@ -51,9 +51,10 @@ Which planet is known as the Red Planet?;A) Earth;B) Venus;C) Mars;D;Jupiter;C
 - Final results display the user's accuracy as a percentage.  
 
 ## 📸 Screenshots  
-(Add screenshots of the quiz interface here)  
+![Quiz Game](https://raw.githubusercontent.com/sh1kto/quiz_game/refs/heads/main/qz_sc1.png)
 
 ## 📜 License  
 
 This project is open-source. Feel free to modify and improve it!  
 
+](https://raw.githubusercontent.com/sh1kto/quiz_game/refs/heads/main/qz_sc1.png)
