@@ -22,6 +22,10 @@ guesses = []
 score = 0
 question_num = 0
 
+welcome = "----------------------\n       Quiz Game       \n    Made by sh1kto       \n----------------------"
+
+print(welcome)
+
 for question in questions:
     print("----------------------")
     print(question)

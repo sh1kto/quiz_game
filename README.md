@@ -1,9 +1,57 @@
-# Quiz Game
-A simple quiz game made with python for a demo project.
+# 🧠 Quiz Game  
 
-<br>
+A simple command-line quiz game in Python that loads multiple-choice questions from a file and evaluates the user's answers.  
 
-![Lines of code](https://img.shields.io/tokei/lines/github/shikto7/quiz_game?color=blueviolet&label=lines%20of%20code&style=for-the-badge)
+## 📌 Features  
 
-## Final Output
-![alt text](https://github.com/shikto7/quiz_game/blob/main/qz_sc1.png "Quiz Game")
+✅ Loads questions dynamically from a `.qnf` file.  
+✅ Supports multiple-choice questions (A, B, C, D).  
+✅ Validates user input to prevent incorrect responses.  
+✅ Provides real-time feedback and a final score.  
+
+## 🛠 Installation  
+
+### Prerequisites  
+![Static Badge](https://img.shields.io/badge/Prerequisites-Python-brightgreen)  
+- Python must be installed on your system. You can download it from [python.org](https://www.python.org/).  
+
+### Steps  
+1. **Clone the repository:**  
+   ```sh
+   git clone https://github.com/yourusername/quiz-game.git
+   cd quiz-game
+   ```  
+
+2. **Run the script:**  
+   ```sh
+   python main.py
+   ```  
+
+## 📂 Question File Format  
+
+The quiz loads questions from a `.qnf` file located in the `questions` folder in the following format:  
+
+```
+Question1;OptionA;OptionB;OptionC;OptionD;CorrectAnswer
+Question2;OptionA;OptionB;OptionC;OptionD;CorrectAnswer
+```
+
+Example:  
+
+```
+What is the capital of France?;A) Berlin;B) Madrid;C) Paris;D) Rome;C
+Which planet is known as the Red Planet?;A) Earth;B) Venus;C) Mars;D;Jupiter;C
+```
+
+## 🏆 Scoring  
+
+- Correct answers increase the score.  
+- Final results display the user's accuracy as a percentage.  
+
+## 📸 Screenshots  
+(Add screenshots of the quiz interface here)  
+
+## 📜 License  
+
+This project is open-source. Feel free to modify and improve it!  
+
